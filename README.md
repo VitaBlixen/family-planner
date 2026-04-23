@@ -8,7 +8,8 @@ A digital take on the wall planning boards popular in Danish homes — a shared,
 
 ## Screenshots
 
-*Weekly overview — coming soon*
+![Color Palette](screenshots/colorpalette.png)
+![Weekly Overview](screenshots/weekly.png)
 
 ---
 
