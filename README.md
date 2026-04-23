@@ -63,3 +63,16 @@ The visual design is inspired by the physical wall planning boards commonly foun
 ## Background
 
 I built this project to have something concrete to show during my job search — a real-world app that solves an actual problem rather than a tutorial clone. The scope is intentionally kept small for the initial proof of concept, with a clear roadmap for expanding it.
+
+## AI assistance
+
+Parts of this project were built with help from Claude (Anthropic) as a pair-programming tool.
+
+AI was used for:
+- brainstorming style like color palette and fonts
+- Setting up Tailwind CSS v4 with Vite
+- Scaffolding the initial component structure
+- Writing boilerplate code (grid layout, placeholder components)
+
+All architectural decisions, design choices, and feature direction were made by me.
+The code has been read, understood, and approved before being committed.
