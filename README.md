@@ -1,16 +1,64 @@
-# React + Vite
+# Family Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A digital take on the wall planning boards popular in Danish homes — a shared, at-a-glance overview of the whole family's week, built for a large screen.
 
-Currently, two official plugins are available:
+> This project is a personal portfolio piece built to demonstrate frontend development skills in React and Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Screenshots
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*Weekly overview — coming soon*
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+### Currently available
+- Weekly calendar with an overview of all 7 days
+- Color-coded rows for each family member
+- Clean, paper-inspired design with a warm color palette
+
+### Planned
+- [ ] Add, edit and remove events in the calendar
+- [ ] Configurable start day of the week (Monday or Sunday)
+- [ ] Dynamic family members — add or remove members as needed
+- [ ] Meal planning section
+- [ ] Notes section
+- [ ] Resizable sections — let each family customize the layout
+- [ ] Monthly overview
+
+---
+
+## Tech stack
+
+- [React 19](https://react.dev/)
+- [Vite](https://vite.dev/)
+- [Tailwind CSS v4](https://tailwindcss.com/)
+
+---
+
+## Getting started
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+---
+
+## Design
+
+The visual design is inspired by the physical wall planning boards commonly found in Danish homes. The goal is a calm, paper-like aesthetic that feels familiar and easy to read at a glance — warm off-white backgrounds, soft color accents per family member, and clear typographic hierarchy using a display serif paired with a rounded sans-serif.
+
+---
+
+## Background
+
+I built this project to have something concrete to show during my job search — a real-world app that solves an actual problem rather than a tutorial clone. The scope is intentionally kept small for the initial proof of concept, with a clear roadmap for expanding it.
