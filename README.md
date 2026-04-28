@@ -16,10 +16,15 @@ A digital take on the wall planning boards popular in Danish homes — a shared,
 ## Features
 
 ### Currently available
-- Weekly calendar with an overview of all 7 days
+- Weekly calendar showing the current week with date-based navigation (previous/next week)
+- Events tied to specific dates — not recurring weekly
+- Add, edit and delete events with title, time, emoji icon, assigned members and notes
+- Events displayed in chronological order within each day
+- Assign an event to multiple family members at once — it appears in all their rows
+- Note indicator on events that have a description
 - Color-coded rows for each family member
+- Today's date highlighted in the calendar
 - Clean, paper-inspired design with a warm color palette
-- [ ] Add, edit and remove events in the calendar
 
 ### Planned
 - [ ] Configurable start day of the week (Monday or Sunday)
@@ -36,6 +41,7 @@ A digital take on the wall planning boards popular in Danish homes — a shared,
 - [React 19](https://react.dev/)
 - [Vite](https://vite.dev/)
 - [Tailwind CSS v4](https://tailwindcss.com/)
+- [React Router v7](https://reactrouter.com/)
 
 ---
 
@@ -69,10 +75,10 @@ I built this project to have something concrete to show during my job search —
 Parts of this project were built with help from Claude (Anthropic) as a pair-programming tool.
 
 AI was used for:
-- brainstorming style like color palette and fonts
 - Setting up Tailwind CSS v4 with Vite
-- Scaffolding the initial component structure
-- Writing boilerplate code (grid layout, placeholder components)
+- Scaffolding the initial component structure and layout
+- Building the event system (localStorage, modals, multi-member support)
+- Implementing date-based week navigation
 
-All architectural decisions, design choices, and feature direction were made by me.
+All feature decisions, design direction, and visual choices were made by me.
 The code has been read, understood, and approved before being committed.
