@@ -2,11 +2,18 @@ import { useState } from 'react'
 
 const ALL_MEMBERS = ['Mom', 'Dad', 'Child 1', 'Child 2']
 
+const EMOJIS = [
+  '🏥','🦷','💊','🏫','📚','⚽','🏊','🎵','🎨','🎭',
+  '🛒','🍽️','🎂','🎉','✈️','🚗','🐕','🌿','💪','🏋️',
+  '👶','🏃','🎯','🧹','🤝','📅',
+]
+
 function EventFormModal({ day, initialMember, event, onSave, onClose }) {
   const [title, setTitle] = useState(event?.title ?? '')
   const [time, setTime] = useState(event?.time ?? '')
   const [members, setMembers] = useState(event?.members ?? [initialMember])
   const [description, setDescription] = useState(event?.description ?? '')
+  const [emoji, setEmoji] = useState(event?.emoji ?? '')
 
   const toggleMember = (name) => {
     setMembers(prev =>
@@ -17,7 +24,7 @@ function EventFormModal({ day, initialMember, event, onSave, onClose }) {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (!title.trim() || members.length === 0) return
-    onSave({ title: title.trim(), time, members, description: description.trim() })
+    onSave({ title: title.trim(), time, members, description: description.trim(), emoji })
   }
 
   return (
@@ -40,6 +47,26 @@ function EventFormModal({ day, initialMember, event, onSave, onClose }) {
               placeholder="e.g. Doctor appointment"
               className="mt-1 w-full border border-rule rounded-lg px-3 py-2 text-sm text-ink outline-none focus:border-ink/40"
             />
+          </div>
+
+          <div>
+            <label className="text-xs font-semibold text-ink/50 uppercase tracking-wide">Icon (optional)</label>
+            <div className="mt-2 flex flex-wrap gap-1">
+              {EMOJIS.map(e => (
+                <button
+                  key={e}
+                  type="button"
+                  onClick={() => setEmoji(prev => prev === e ? '' : e)}
+                  className={`w-9 h-9 text-lg rounded-lg transition-colors ${
+                    emoji === e
+                      ? 'bg-mist ring-1 ring-rule'
+                      : 'hover:bg-mist'
+                  }`}
+                >
+                  {e}
+                </button>
+              ))}
+            </div>
           </div>
 
           <div>

@@ -24,8 +24,9 @@ function DayCell({ events = [], onAddClick, onEventClick }) {
         <button
           key={event.id}
           onClick={() => onEventClick(event)}
-          className="text-left text-xs text-ink bg-white border border-rule rounded px-1.5 py-0.5 leading-snug hover:border-ink/30 transition-colors flex items-center gap-1 w-full"
+          className="text-left text-xs text-ink rounded px-1 py-0.5 leading-snug hover:bg-rule/40 transition-colors flex items-center gap-1 w-full"
         >
+          {event.emoji && <span>{event.emoji}</span>}
           <span className="truncate">
             {event.time && <span className="text-ink/50 mr-1">{event.time}</span>}
             {event.title}

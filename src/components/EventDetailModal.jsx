@@ -8,7 +8,10 @@ function EventDetailModal({ event, day, onEdit, onDelete, onClose }) {
         <div className="flex items-start justify-between mb-4">
           <div>
             {event.time && <p className="text-sm text-ink/50 mb-1">{event.time}</p>}
-            <h2 className="font-display text-2xl text-ink">{event.title}</h2>
+            <h2 className="font-display text-2xl text-ink">
+              {event.emoji && <span className="mr-2">{event.emoji}</span>}
+              {event.title}
+            </h2>
           </div>
           <button
             onClick={onClose}
