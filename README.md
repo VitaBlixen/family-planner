@@ -19,9 +19,9 @@ A digital take on the wall planning boards popular in Danish homes — a shared,
 - Weekly calendar with an overview of all 7 days
 - Color-coded rows for each family member
 - Clean, paper-inspired design with a warm color palette
+- [ ] Add, edit and remove events in the calendar
 
 ### Planned
-- [ ] Add, edit and remove events in the calendar
 - [ ] Configurable start day of the week (Monday or Sunday)
 - [ ] Dynamic family members — add or remove members as needed
 - [ ] Meal planning section
